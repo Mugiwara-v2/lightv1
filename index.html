@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html manifest="84ciss.manifest"><head>
+<title>Son84Goku Host Light for FW 9.00</title>
+<link rel="stylesheet prefetch" href="Style.css">
+<style>
+html,html, body {
+//background-image: url('img.jpg');
+background-size: 100%;
+background-repeat: no-repeat;
+//background-color: #24272b;
+color: white;
+text-align: center;
+margin: 0px;
+overflow: hidden;
+}
+  .themes {
+   width:98%;
+   margin:0 auto;
+   margin-left:2%;
+   margin-top:2%;
+  }
+  .theme {
+    background:rgba(0,0,0,0.75);
+    width:14.1%;
+    text-align:center;
+    display:inline-block;
+    margin-right:2.5%;
+    margin-bottom:2.5%;
+  }
+  .theme img {
+    width:100%;
+  }
+  .theme span  {
+   color:white;
+   display:block;
+   padding:10px;
+  }
+		button {
+		  background:rgba(0,0,0,0.5);
+		  box-shadow: 0 5px 20px 0 white;
+		  border: 2px solid black;
+		  border-radius: 10px;
+		  color: white;
+		  text-decoration: none;
+		  width: 200px;
+          height: 40px;
+		  display:inline-table;
+		  font-family: system-ui;
+		  text-align: center;
+		}
+
+		button:focus,
+		button:hover {
+		  color: White;
+		  box-shadow: 0 5px 50px 0 white;
+		  background-color: #87FF33;
+          border-radius: 10px;
+		}
+h1 {
+text-shadow: 0.1em 0.1em 0.2em black;
+font-size: 25px;
+text-align: center;
+color: white;
+}
+.btn {
+background-color: #003263;
+color: white;
+width: 260px;
+height: 49px;
+padding-bottom: 5px;
+text-align: center;
+font-size: 20px;
+margin-top: 8px;
+margin-bottom: 8px;
+margin-left: 8px;
+margin-right: 8px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-width: 0px;
+border-left-width: 0px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 8px;
+}
+.btn:hover {
+background-color: #0058b1;
+}
+.btn-toolbox {
+background-color: #ae2301;
+}
+.btn-toolbox:hover {
+background-color: #d42a01;
+}
+</style>
+<script src="int64.js"></script>
+<script src="rop.js"></script>
+<script src="kexploit.js"></script>
+<script src="webkit.js"></script>
+<script src="payload.js"></script>
+</head>
+<body>
+<script>
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
+function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully ✔";},1000);setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser ...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+<h1 id="msgs" style="color:#87FF33">Son84Goku Host Light for FW 9.00</h1>
+<h1 id=msgs2 style='font-size:25px;text-align:center;color:yellow;'>STATUS</h1>
+<div style='font-size:20px;text-align:center;color:#87FF33;'>PlatinumHen/GoldHen</div>
+<button style='font-size:22px;text-align:center;color:#4863A0;background-color: #e5e4e2;' class="pointer" onclick=load_platinum() onMouseOver="msgs2.innerHTML='PlatinumHen 1.4b Ftp Unofficial by 84Ciss'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B>Platinum 1.4b </B></button></a>
+<button style='font-size:22px;text-align:center;color:white;background-color: goldenrod;' class="pointer" onclick=load_goldhen2b2() onMouseOver="msgs2.innerHTML='GoldHEN 2.0b2 by SISTRo'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B>GoldHen 2.0b2 </B></button></a>
+<br><br>
+<div style=font-size:20px;text-align:center;color:#87FF33;>Mods</div>
+<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_gtabeef138() onMouseOver="msgs2.innerHTML='Gta V BeefQueef Mod Menu 1.38c'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> GtaV Beef 1.38c </B></button></a>
+<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_rdr2129() onMouseOver="msgs2.innerHTML='Rdr2 Oysters Mod Menu 1.29'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Rdr2 Oysters-1.29 </B></button></a>
+<a href="http://night-king.karo218.ir/trainer/Trainerv4/index.html"><button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="msgs2.innerHTML='PS4 Trainer Offline By Karo'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Ps4 trainer </B></button></a>
+<br><br>
+<div style=font-size:20px;text-align:center;color:#87FF33;>Fan</div>
+<button style='font-size:20px;text-align:center;color:#4863A0;margin-left:75px' class="pointer" onclick=load_fanthreshold() onMouseOver="msgs2.innerHTML='fan speed Selector °C'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Fan Selector </B></button><select id="tempC"style='font-size:20px;text-align:center;background-color:#032140;color:#87FF33;' id="tempC"></select> <a style='font-size:17px;text-align:center;color:#87FF33;'>&#176;C</a>
+<br><br>
+<div style=font-size:20px;text-align:center;color:#87FF33;>Payloads</div>
+<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_ps4debug() onMouseOver="msgs2.innerHTML='Ps4 Debugger '" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Ps4Debug </B></button></a>
+<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_dumper() onMouseOver="msgs2.innerHTML='Dump Games to a USB drive to be able to create fpkg files'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Dumper Game </B></button></a>
+<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_webrte() onMouseOver="msgs2.innerHTML='Webrte for mods Game'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> WebRte </B></button></a>
+<br><br>
+<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_disableUpdates() onMouseOver="msgs2.innerHTML='Creates dummy files in the PS4 update folder'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B>Disable Update</B></button></a>
+<button style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onclick=load_webactivator() onMouseOver="msgs2.innerHTML='Web Activator account'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Web Activator </B></button></a>
+<button style='font-size:20px;text-align:center;color:withe;background-color: red;' class="pointer" onclick=load_otoolbox() onMouseOver="msgs2.innerHTML='add Option Debug feature'" ; onmouseout="msgs2.innerHTML='STATUS'" type="button"><B> Orbis toolbox </B></button></a>
+<br><br><br>
+<button style="background-color:#781f1f;border-radius:50px;">
+FW- <span id="PS4fw"></span></button>
+<br><br>
+<div style="background-color:#032140;color:white;position:fixed;left:0;bottom:-0px;width:100%;text-align:center;">
+<font style='color:#87FF33'>Modder & Dev : </font>Son84Goku - Find Me In Tweeter if you have any kind of issues !&nbsp;<a href="https://twitter.com/84Ciss" style='font-size:20px;text-align:center;color:yellow;'>@Son84Goku</a>
+<br><font style='color:#87FF33'>Special thanks : </font>@Sleirgoevy for Webkit, @SpecterDev & @ChendoChap for kex, @SiSTRo for Gold&HEN
+</div>
+
+<script>
+UA = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple'));
+PS4fw.innerHTML=""+UA+" Spoof";
+
+</script>
+<div class="about2" ><a href="theme.html" >Themes</a></div>
+<script type="text/javascript">
+ if(localStorage.getItem("theme")==null){
+   localStorage.setItem("theme","1.jpg")
+ }
+ document.body.style.background = "url('"+localStorage.getItem("theme")+"')"
+ document.body.style.backgroundSize = "cover"
+ var imgs = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg"];
+ render()
+ function render(){
+     document.querySelector(".themes").innerHTML=""
+	 for(let i=0;i<imgs.length;i++){
+	    var selectText = "Select"
+	    var textColor = "white"
+	    if(localStorage.theme==imgs[i]){
+	      selectText="Selected"
+	      textColor="green"
+	    }
+	 	document.querySelector(".themes").innerHTML+='<div class="theme" ><img src="'+imgs[i]+'" ><span style="color:'+textColor+';" onclick="set('+i+')">'+selectText+'</span></div>';
+	 }
+ }
+ function set(i){
+    localStorage.setItem("theme",imgs[i])
+    render()
+ 	document.body.style.background = "url('"+imgs[i]+"')"
+ 	document.body.style.backgroundSize = "cover"
+ }
+</script>
+<script>
+for(var i=40; i<=79; i++){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
+}
+tempC.value=60;
+</script>
+</body>
+</html>
